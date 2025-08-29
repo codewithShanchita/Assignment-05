@@ -37,7 +37,7 @@ const services = [
           </div>
   
           <!-- Title + Subtitle -->
-          <h3 class="font-semibold text-base">${s.name_en}</h3>
+          <h3 class="font-bold text-base">${s.name_en}</h3>
           <p class="text-sm text-gray-500 mb-3">${s.name_bn}</p>
   
           <!-- Number -->
