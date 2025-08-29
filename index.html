@@ -1,11 +1,63 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service Directory</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Service Directory</title>
+
+  <!-- Tailwind & DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.png" />
 </head>
-<body>
-    
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow sticky top-0 z-30">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      
+      <!-- Logo + Text -->
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="logo" class="w-10 h-10 rounded-full border" />
+        <!-- Hide on small devices -->
+        <div class="hidden sm:block">
+          <div class="text-sm font-extrabold text-[#006747]">
+            Emergency <br> Service
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Items -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Heart -->
+        <div class="flex items-center gap-2 bg-[#41ff6b1a] px-3 py-1 rounded-full shadow-sm">
+          <span id="heartCount" class="text-sm">0</span>
+          <img src="assets/heart.png" alt="heart" class="w-4 h-4"/>
+        </div>
+
+        <!-- Coin -->
+        <div class="flex items-center gap-2 bg-[#41ff6b1a] px-3 py-1 rounded-full shadow-sm">
+          <span id="coinCount" class="text-sm">100</span>
+          <img src="assets/coin.png" alt="coin" class="w-4 h-4"/>
+        </div>
+
+        <!-- Copy Button -->
+        <div class="flex items-center gap-2 bg-[#00a63e] px-4 py-1 rounded-full shadow-sm text-white font-medium">
+          <span id="copyCount" class="text-sm">2</span>
+          <span>Copy</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
